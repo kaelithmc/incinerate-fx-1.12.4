@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "incineratefx",
+	"version": "${version}",
+	"name": "Incinerate FX",
+	"description": "A mod that adds various environmental effects and appropriate armor sets and weapons to Minecraft",
+	"authors": [
+		"hamlin23"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/incineratefx/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hamlin23.incineratefx.IncinerateFX"
+		],
+		"fabric-datagen": [
+			"net.hamlin23.incineratefx.IncinerateFXDataGenerator"
+		],
+		"client": [
+			"net.hamlin23.incineratefx.IncinerateFXClient"
+		]
+	},
+	"mixins": [
+		"incineratefx.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
